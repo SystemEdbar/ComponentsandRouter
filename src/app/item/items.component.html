@@ -11,6 +11,15 @@ The ActionBar is the NativeScript common abstraction over the Android ActionBar 
 http://docs.nativescript.org/ui/action-bar
 -->
 <ActionBar title="My App"> </ActionBar>
+<StackLayout>
+  <button height="50"
+          [nsRouterLink]="['/tags-input']"
+          text="Tap me!"
+          android.position="popup"
+          textWrap="true"
+          class="-rounded-lg"
+          style="background: skyblue; color: white">
+  </button>
 
 <!--
 The GridLayout arranges its child elements in a table structure of rows and columns.
@@ -31,3 +40,4 @@ You can learn more about the NativeScript core theme at https://github.com/nativ
     </ng-template>
   </ListView>
 </GridLayout>
+</StackLayout>
